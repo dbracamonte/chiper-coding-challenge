@@ -66,7 +66,7 @@ export const CasesList = () => {
       setShowPaginator(false);
       setRows(filteredData);
     }
-  }, [searchKey, dateFrom, dateTo]);
+  }, [data, searchKey, dateFrom, dateTo]);
 
   if (loadingCount || loadingData) return <Loading />;
 
